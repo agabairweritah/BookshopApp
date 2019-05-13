@@ -1,28 +1,28 @@
 package com.example.dell.bookshopapp;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class books extends AppCompatActivity {
-Button btn6;
+public class more extends AppCompatActivity {
+Button btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_books);
-
-        btn6=(Button) findViewById(R.id.button11);
-        btn6.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_more);
+        btn2=(Button) findViewById(R.id.buttonx);
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myintent= new Intent(books.this,more.class);
+                Intent myintent= new Intent(more.this,books.class);
                 startActivity(myintent);
             }
         });
 
     }
+
 
     @Override
     protected void onRestart(){
@@ -37,7 +37,4 @@ Button btn6;
         super.onResume();
 
     }
-
-
-
 }

@@ -1,3 +1,28 @@
 <resources>
+    <string name="text">Data strengths / limitations
+Data on labour migration are scattered mainly because it is difficult to collect reliable data on migrant workers.  data collection faces the following gaps and challenges:
+•	Lack of good quality data, including missing populations of interest, inconsistent periods of data collection, or key characteristics not being collected
+•	Limited data comparability due to different concepts, definitions and measurement methods
+•	Lack of infrastructure to process data in national institutions or at border crossing points
+•	Insufficient expertise among staff collecting or analyzing data
+•	Lack of infrastructure to publish key characteristics, populations or places of interest
+•	Insufficient priority given to labour migration in national policy agendas and related budget allocation.
+
+Labour migration is defined as casual and unskilled workers who move about systematically from one region to another offering their services on  a temporary ,usually seasonal basis.
+
+A migrant worker is a person who either migrates within their home country or outside it to pursue work such as seasonal work.
+Migrant workers who work outside their home country are also called foreign workers .they may also be called expatriates especially when they have been sent for to work in the host country before leaving the home country.
+</string>
     <string name="app_name">BookshopApp</string>
+    <string name="title_activity_tab_view">Tab_view</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="this_is_an_article_extracted_from_a_historical_journal">this is an article extracted from a historical journal</string>
+    <string name="this_the_right_part_of_the_libary">this the right part of the libary</string>
+    <string name="this_is_the_left_part_of_the_libray">this is the left part of the libray</string>
+    <string name="this_is_the_central_part_of_the_libray">this is the central part of the libray</string>
+    <string name="post_comment_here">POST COMMENT HERE</string>
 </resources>

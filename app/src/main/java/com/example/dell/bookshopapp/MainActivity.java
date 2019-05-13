@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity {
     Button btn;
 
@@ -24,11 +26,54 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn=(Button) findViewById(R.id.button);
+        btn=(Button) findViewById(R.id.botton);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent= new Intent(MainActivity.this,Login.class);
+                startActivity(myintent);
+            }
+        });
+
+
+        btn=(Button) findViewById(R.id.signup);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent= new Intent(MainActivity.this,Signup.class);
+                startActivity(myintent);
+            }
+        });
+
+        btn=(Button) findViewById(R.id.ebooks);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent= new Intent(MainActivity.this,books.class);
+                startActivity(myintent);
+            }
+        });
+        btn=(Button) findViewById(R.id.about);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             Intent myintent=new Intent(MainActivity.this,Frag_bottom.class);
+             startActivity(myintent);
+            }
+        });
+
+        btn=(Button) findViewById(R.id.tour);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent= new Intent(MainActivity.this,books.class);
+                startActivity(myintent);
+                Toast.makeText(getApplicationContext(),"you attempt to open books",Toast.LENGTH_LONG).show();
+            }
+        });
+
     }
-    void setfragment(Fragment fragment){
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
-    }
+
 
     @Override
     public void onRestart(){
@@ -69,27 +114,6 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.item,menu);
         return super.onCreateOptionsMenu(menu);
 
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int x=item.getItemId();
-
-        switch (x){
-            case R.id.list:
-               Intent n=new Intent(getApplicationContext(),stock.class);
-               startActivity(n);
-            return true;
-
-            case R.id.home:
-                setfragment(new Home());
-                break;
-            case R.id.settings:
-                setfragment(new Settings());
-                break;
-
-        }
-        return super.onOptionsItemSelected(item);
     }
 
 

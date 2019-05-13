@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1039430648379",
+    "firebase_url": "https://bookshop-22b74.firebaseio.com",
+    "project_id": "bookshop-22b74",
+    "storage_bucket": "bookshop-22b74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039430648379:android:9519729a00e425d0",
+        "android_client_info": {
+          "package_name": "com.example.dell.bookshopapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039430648379-iftral4g0c9jgjedkcpnevgkmdjlis5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dell.bookshopapp",
+            "certificate_hash": "239830563313da6f223f82bc2fd055b2e319e9d6"
+          }
+        },
+        {
+          "client_id": "1039430648379-lmov4tokm31u79jqf6hdposbimnm63s5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQMAnjDyxdOqelQKU2TU45kd3L3q7wKY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039430648379-lmov4tokm31u79jqf6hdposbimnm63s5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -11,6 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:background="@drawable/textshape"
         android:text="PLEASE CREATE AN ACCOUNT"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -25,6 +27,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Name"
+        android:textAlignment="center"
+        android:background="@drawable/textshape"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editText4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,6 +40,8 @@
         android:id="@+id/editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@drawable/textshape"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -51,6 +57,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Phone"
+        android:textAlignment="center"
+        android:background="@drawable/textshape"
         android:inputType="phone"
         app:layout_constraintBottom_toTopOf="@+id/editText7"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,6 +72,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Password"
+        android:textAlignment="center"
+        android:background="@drawable/textshape"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,24 +83,15 @@
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/buttonshape"
         android:text="Create Account"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText7" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Clear fields"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
 
 </android.support.constraint.ConstraintLayout>
